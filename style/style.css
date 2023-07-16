@@ -47,7 +47,7 @@ button{
   height: 100%;
 }
 
-.input{
+.display{
   background-color: var(--clr-white);
   height: 3rem;
   border: 1px solid rgb(214, 213, 213);
@@ -226,4 +226,10 @@ button{
 .number{
   background-color: var(--clr-white);
   border: 1px solid rgb(214, 213, 213);
+}
+
+.input-text,.result{
+  width: 100%;
+  text-align: right;
+  
 }
