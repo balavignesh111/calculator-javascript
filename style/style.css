@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+  --clr-grey:rgb(221,221,221);
+  --clr-blue: rgb(78,143,254);
+  --clr-white: rgb(249,249,249);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 23rem;
+  height: 20rem;
+  padding: 1rem;
+  border: 1px solid rgb(214, 213, 213);
+  display: grid;
+  grid-template-rows: repeat(6,1fr);
+  grid-template-columns: repeat(4,1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* calculator btn style starts here!!! */
+
+/* btn */
+button{
+  width: 100%;
+  height: 100%;
+}
+
+.input{
+  background-color: var(--clr-white);
+  height: 3rem;
+  border: 1px solid rgb(214, 213, 213);
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.equal{
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row-start: 3;
+  grid-row-end: 7;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.addOperator{
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.minusOperator{
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.multiplicationOperator{
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.divisonOpertors{
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.equal-operator{
+  color: var(--clr-white);
+  background-color: var(--clr-blue);
+  border: 1px solid var(--clr-blue);
+}
+
+.numberSeven{
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.numberEight{
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.numberNine{
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.numberFour{
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.numberFive{
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.numberSix{
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.numberOne{
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.numberTwo{
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.numberThree{
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.numberZero{
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.dot{
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.clear{
+  justify-self: stretch;
+  align-self: stretch;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.operator{
+  background-color: var(--clr-grey);
+  border: 1px solid rgb(214, 213, 213);
+}
+
+.number{
+  background-color: var(--clr-white);
+  border: 1px solid rgb(214, 213, 213);
+}
